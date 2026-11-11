@@ -1,0 +1,68 @@
+.cafe-info {
+    position: relative;
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 50px 45px;
+    overflow: hidden;
+    border-radius: 20px;
+
+    background: linear-gradient(120deg, #29221e, #49352b);
+    color: #fff;
+
+    box-shadow: 0 15px 35px rgba(41, 34, 30, 0.2);
+}
+
+.cafe-info::after {
+    content: "☕";
+    position: absolute;
+    right: 40px;
+    bottom: -35px;
+    font-size: 180px;
+    opacity: 0.08;
+    transform: rotate(-15deg);
+}
+
+.cafe-info h1 {
+    position: relative;
+    z-index: 1;
+    margin: 0 0 20px;
+
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #f5c18b;
+}
+
+.cafe-info p {
+    position: relative;
+    z-index: 1;
+    max-width: 650px;
+    margin: 0;
+
+    font-size: 17px;
+    line-height: 1.8;
+    color: #e8dcd2;
+}
+
+.cafe-info:hover {
+    box-shadow: 0 20px 45px rgba(41, 34, 30, 0.3);
+}
+
+#cafeGrade {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    margin: 20px 0;
+    padding: 12px 20px;
+
+    background: linear-gradient(135deg, #b24d1b, #29221e);
+    color: #f5c18b;
+
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    box-shadow: 0 6px 15px rgba(41, 34, 30, 0.18);
+}

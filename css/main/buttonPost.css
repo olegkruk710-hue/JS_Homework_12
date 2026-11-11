@@ -1,0 +1,26 @@
+.button-post {
+    max-width: 900px;
+    margin: 35px auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.review-button {
+    display: inline-block;
+    padding: 15px 35px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #49352b, #29221e);
+    color: #f5c18b;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 6px 15px rgba(41, 34, 30, 0.2);
+    transition: 0.25s ease;
+}
+
+.review-button:hover {
+    background: linear-gradient(135deg, #654735, #49352b);
+    color: #f5c18b;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 22px rgba(41, 34, 30, 0.3);
+}

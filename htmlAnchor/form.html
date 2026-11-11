@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оставить отзыв</title>
+    <link rel="stylesheet" href="../css/form/style.css">
+</head>
+<body>
+
+    <form class="review-form">
+        <h1>Оставить отзыв</h1>
+        <p class="subtitle">Поделитесь впечатлениями о посещении Brew House</p>
+
+        <label for="nameInput">Ваше имя<span class="star"> *</span></label>
+        <input id="nameInput" type="text" placeholder="Введите имя..." maxlength="50" required>
+
+        <label for="contenText">Ваш отзыв<span class="star"> *</span></label>
+        <textarea id="contenText" placeholder="Расскажите о своих впечатлениях..." maxlength="400" required></textarea>
+
+        <p class="rating-title">Ваша оценка:</p>
+
+        <div class="rating" id="raitingSelect">
+            <input type="radio" name="rating" id="star5" value="5">
+            <label for="star5">★</label>
+
+            <input type="radio" name="rating" id="star4" value="4">
+            <label for="star4">★</label>
+
+            <input type="radio" name="rating" id="star3" value="3">
+            <label for="star3">★</label>
+
+            <input type="radio" name="rating" id="star2" value="2">
+            <label for="star2">★</label>
+
+            <input type="radio" name="rating" id="star1" value="1">
+            <label for="star1">★</label>
+        </div>
+
+        <button type="submit">Отправить отзыв</button>
+        <a href="../index.html" class="back-home">← Вернуться на главную</a>
+    </form>
+    <script src="../js/form/main.js" type="module"></script>
+</body>
+</html>
