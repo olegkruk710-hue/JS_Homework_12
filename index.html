@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/main/body.css">
     <link rel="stylesheet" href="./css/main/buttonPost.css">
     <link rel="stylesheet" href="./css/main/reviewContainer.css">
+    <link rel="stylesheet" href="./css/main/filter.css">
 </head>
 <body>
     <header class="cafe-info">
@@ -20,14 +21,50 @@
         </p>
         <p class="grade" id="cafeGrade"></p>
     </header>
-    <section class="button-post">
+<section class="filter-section">
+    <h2>Фильтр отзывов</h2>
+
+    <div class="filter-controls" id="filterControls">
+        <div class="filter-group">
+            <label for="searchInput">Поиск отзыва</label>
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Имя автора..."
+            >
+        </div>
+
+        <div class="filter-group">
+            <label for="ratingFilter">Оценка</label>
+            <select id="ratingFilter">
+                <option value="all">Все оценки</option>
+                <option value="5">Отлично</option>
+                <option value="4">Хорошо</option>
+                <option value="3">Нормально</option>
+                <option value="2">Плохо</option>
+                <option value="1">Очень плохо</option>
+            </select>
+        </div>
+
+        <button id="resetFilter">
+            Сбросить фильтр
+        </button>
+    </div>
+
+    <p id="showReviewQuantity" ></p>
+    
+</section>
+
+
+    <main class="reviews-container" id="reviewsContainer">
+
+    </main>
+
+     <section class="button-post">
     <a href="./htmlAnchor/form.html" class="review-button">
         Оставить отзыв
     </a>
 </section>
-    <main class="reviews-container" id="reviewsContainer">
-
-    </main>
     
     <script src="./js/main/main.js" type="module"></script>
 </body>

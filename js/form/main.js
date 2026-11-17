@@ -8,8 +8,8 @@ const body = document.querySelector("body");
 
 function createReview() {
     let review = {
-        name: nameInput.value,
-        text: contenText.value,
+        name: nameInput.value.trim(),
+        text: contenText.value.trim(),
         rating: ratingValue ?? 0
     }
 
@@ -23,11 +23,16 @@ raitingSelect.addEventListener("change", (e) => {
 });
 
 form.addEventListener("submit", async function(e) {
-    e.preventDefault()
-    console.log(e.submitter.tagName);
+    e.preventDefault();
+
+    let data = createReview();
+    if (!data.name || !data.text) {
+        return;
+    }
+
     if (e.submitter.tagName === "BUTTON") {
         try {
-            await createData("reviews", createReview());
+            await createData("reviews", data);
             body.innerHTML = `<h3 class="thanks">Спасибо за отзыв!</h3>`;
             setTimeout(() => {
                 window.location.href = "../index.html"

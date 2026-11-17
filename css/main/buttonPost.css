@@ -1,8 +1,8 @@
 .button-post {
-    max-width: 900px;
+    max-width: 990px;
     margin: 35px auto;
     display: flex;
-    justify-content: flex-end;
+    justify-content: end;
 }
 
 .review-button {

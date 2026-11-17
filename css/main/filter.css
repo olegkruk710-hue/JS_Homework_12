@@ -1,0 +1,76 @@
+.filter-section {
+    max-width: 925px;
+    margin: 25px auto;
+    padding: 25px 30px;
+    background: #fffaf4;
+    border: 1px solid #e8d8c7;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(60, 40, 25, 0.08);
+}
+
+.filter-section h2 {
+    margin: 0 0 20px;
+    color: #49352b;
+    font-size: 21px;
+}
+
+.filter-controls {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 8px;
+}
+
+.filter-group label {
+    color: #66574d;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.filter-group input,
+.filter-group select {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d8c5b2;
+    border-radius: 8px;
+    background: #fff;
+    color: #49352b;
+    font-size: 14px;
+    outline: none;
+}
+
+.filter-group input:focus,
+.filter-group select:focus {
+    border-color: #a87950;
+    box-shadow: 0 0 0 3px rgba(168, 121, 80, 0.12);
+}
+
+#resetFilter {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #49352b;
+    color: #f5c18b;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s;
+    white-space: nowrap;
+}
+
+#resetFilter:hover {
+    background: #654735;
+}
+
+@media (max-width: 650px) {
+    .filter-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}

@@ -1,4 +1,9 @@
+.reviews-container {
+    text-align: center;
+}
+
 .review-block {
+    text-align: left;
     max-width: 925px;
     margin: 20px auto;
     padding: 25px 30px;
@@ -49,4 +54,45 @@
     font-size: 18px;
     letter-spacing: 4px;
     color: #e5a333;
+}
+
+.delete-review {
+    padding: 9px 18px;
+    border: 1px solid #a87950;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #49352b, #29221e);
+    color: #f5c18b;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.delete-review:hover {
+    background: linear-gradient(135deg, #8b352d, #65251f);
+    color: #fff5e8;
+    border-color: #8b352d;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(73, 35, 31, 0.2);
+}
+
+.delete-review:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.review-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.review-rating {
+    margin: 0;
+}
+
+#showReviewQuantity {
+    margin: 10px auto;
+    font-weight: 500;
 }
